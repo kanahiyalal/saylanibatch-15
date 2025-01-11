@@ -1,0 +1,159 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.image {
+    background-image: linear-gradient(rgb(41, 227, 75), rgb(192, 171, 171));
+}
+
+.navbar ol {
+    height: 50px;
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.pic {
+    width: 80%;
+    margin-left: 90px;
+}
+
+.btn {
+    background-color: black;
+    color: azure;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3f3b3b;
+}
+
+.container {
+    padding: 200px 200px;
+    width: 90%;
+    line-height: 150%;
+    letter-spacing: 2px;
+}
+
+.container {
+    position: relative;
+    font-size: 36px;
+    font-weight: 500px;
+    line-height: 1.2;
+    margin-block-end: 80px;
+    bottom: 90px;
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 80%;
+}
+
+
+/* .main-container h2 {
+    right: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+} */
+
+p {
+    /* width: 40%; */
+    line-height: 100%;
+}
+
+.button {
+    background-color: black;
+    color: aliceblue;
+    margin: 20px;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: rgb(33, 29, 29);
+}
+
+.side img {
+    width: 60%;
+    margin-left: 550px;
+}
+
+.main {
+    height: 90px;
+    display: flex;
+    gap: 5%;
+    cursor: pointer;
+    color: #000;
+}
+
+img {
+    padding: 30px 30px;
+}
+
+.amazon {
+    mix-blend-mode: multiply;
+}
+
+.dribble {
+    mix-blend-mode: multiply;
+}
+
+.hubspot {
+    mix-blend-mode: multiply;
+}
+
+.notion {
+    mix-blend-mode: multiply;
+}
+
+.netflix {
+    mix-blend-mode: multiply;
+}
+
+.zoom {
+    mix-blend-mode: multiply;
+}
+
+@keyframes flip {
+    from {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+        animation-timing-function: ease-out;
+    }
+    40% {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+        animation-timing-function: ease-out;
+    }
+    50% {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+        animation-timing-function: ease-in;
+    }
+    80% {
+        transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+        animation-timing-function: ease-in;
+    }
+    to {
+        transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+        animation-timing-function: ease-in;
+    }
+}
+
+.animated.flip {
+    backface-visibility: visible;
+    animation-name: flip;
+}
